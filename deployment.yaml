@@ -3,6 +3,7 @@ kind: Deployment
 
 metadata:
   name: hiring-app
+  namespace: default
 
 spec:
   replicas: 2
@@ -18,9 +19,8 @@ spec:
 
     spec:
       containers:
-      - name: hiring-app
-        image: vigneshadlagatta7/hiring-app:v1
+        - name: hiring-app
+          image: vigneshadlagatta7/hiring-app:v1
 
-        ports:
-        - containerPort: 8080
-
+          ports:
+            - containerPort: 8080

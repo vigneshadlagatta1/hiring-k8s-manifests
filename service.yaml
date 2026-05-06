@@ -3,6 +3,7 @@ kind: Service
 
 metadata:
   name: hiring-service
+  namespace: default
 
 spec:
   type: LoadBalancer
@@ -13,4 +14,3 @@ spec:
   ports:
     - port: 80
       targetPort: 8080
-
