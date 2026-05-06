@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: hiring-app
-        image: vigneshadlagatta1/hiring-app:v1
+        image: vigneshadlagatta7/hiring-app:v1
 
         ports:
         - containerPort: 8080
